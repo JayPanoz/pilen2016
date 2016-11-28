@@ -386,6 +386,7 @@ body {
 
 .reveal .flex {
 	display: flex;
+	margin: 0;
 }
 
 .reveal .flex.item33 {
