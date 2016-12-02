@@ -306,6 +306,14 @@ body {
   line-height: 1;
 }
 
+.reveal video,
+.reveal figure img {
+	max-height: 700px;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+}
+
 .reveal figcaption {
   display: block;
   font-size: 0.5em;
@@ -376,19 +384,6 @@ body {
 	all: initial;
 }
 
-.reveal #countdown {
-	position: fixed;
-	bottom: 10px;
-	left: 10px;
-	font-size: 24px;
-	line-height: 1;
-	z-index: 10;
-	color: #111;
-	font-weight: 700;
-	text-shadow: 0 0 2px #FFF;
-	opacity: 0.6;
-}
-
 .reveal .flex {
 	display: -webkit-flex;
 	display: flex;
@@ -410,9 +405,10 @@ body {
 }
 
 .reveal .flex img {
-	width: 100%;
+	width: auto;
 	height: auto;
 	max-width: 100%;
+	object-fit: contain;
 }
 
 .reveal .flex.mh > li {
